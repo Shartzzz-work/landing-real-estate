@@ -1,0 +1,52 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding: 0 100px;
+  margin-top: 20px;
+}
+
+.header-nav {
+  --gap: 50px;
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+}
+
+.header-nav__list {
+  display: flex;
+  gap: var(--gap);
+}
+
+[name="contactUs"] {
+  --c-bg: var(--c-white);
+  color: var(--c-text-dark);
+}
+
+.dropdown {
+  position: relative;
+
+  &[open] {
+    & .dropdown-body {
+      background: var(--c-white);
+      padding: .5em 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    & .link {
+      color: var(--c-text-dark);
+    }
+  }
+}
+
+.dropdown-title {
+  cursor: pointer;
+}
+
+.dropdown-body {
+  position: absolute;
+  margin-top: 10px;
+  min-width: 100%;
+}

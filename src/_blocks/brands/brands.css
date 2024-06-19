@@ -1,0 +1,14 @@
+#brands {
+  background: var(--c-white);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 100px;
+}
+
+.brand-img {
+  max-width: 170px;
+  aspect-ratio: 190 / 83;
+}

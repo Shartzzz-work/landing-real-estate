@@ -1,0 +1,30 @@
+---
+import Logo from './logo/logo.astro';
+---
+
+<header id="header">
+  <a href="/" class="logo" title="home page">
+    <Logo />
+  </a>
+  <nav class="header-nav">
+    <ul class="header-nav__list">
+      <li>
+        <a href="#" class="link">Home</a>
+      </li>
+      <li>
+        <a href="#" class="link">Properties</a>
+      </li>
+      <li>
+        <a href="#" class="link">Agents</a>
+      </li>
+    </ul>
+    <details class="dropdown">
+      <summary class="dropdown-title">Pages</summary>
+      <ul class="dropdown-body">
+        <li><a href="#" class="link">About</a></li>
+        <li><a href="#" class="link">News</a></li>
+      </ul>
+    </details>
+  </nav>
+  <button type="button" class="button" name="contactUs">Contact Us</button>
+</header>
